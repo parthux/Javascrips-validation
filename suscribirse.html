@@ -4,9 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Suscribirse</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 </head>
 <body>
-    
+    <main class="main">
+        <form action="" class="form" id="form">
+            <fielset class="form__fielset form__fielset--start" id="fielsetName">
+                <label for="name" class="form__label">Nombre:</label>
+                <div class="form__input-icon">
+                    <input type="text" class="form__input" id="name" name="name" placeholder="Nombre porfavor.">
+                    <box-icon type='solid' name='x-circle' class="form__validation-estado"></box-icon>
+                </div>
+                <p class="form__paragraph-valitacion">
+                    El Nombre debe tener mas de 3 letras.
+                </p>
+            </fielset>
+            <fielset class="form__fielset" id="fielsetSurname">
+                <label for="surname" class="form__label">Apellido:</label>
+                <div class="form__input-icon">
+                    <input type="text" class="form__input" id="surname" name="surname" placeholder="Apellido porfavor.">
+                    <box-icon type='solid' name='x-circle' class="form__validation-estado"></box-icon>
+                </div>
+                <p class="form__paragraph-valitacion">
+                    El Apellido debe tener mas de 3 letras.
+                </p>
+            </fielset>
+            <fielset class="form__fielset" id="fielsetEmail">
+                <label for="useremail" class="form__label">Email:</label>
+                <div class="form__input-icon">
+                    <input type="email" class="form__input" id="useremail" name="useremail" placeholder="Email porfavor.">
+                    <box-icon type='solid' name='x-circle' class="form__validation-estado"></box-icon>
+                </div>
+                <p class="form__paragraph-valitacion">
+                    El Email ingresado no es valido.
+                </p>
+            </fielset>
+            <fielset class="form__fielset" id="fielsetPassword">
+                <label for="password" class="form__label">Contraseña:</label>
+                <div class="form__input-icon">
+                    <input type="password" class="form__input" id="password" name="password" placeholder="Contraseña porfavor.">
+                    <box-icon type='solid' name='x-circle' class="form__validation-estado"></box-icon>
+                </div>
+                <p class="form__paragraph-valitacion">
+                    La contraseña ingresada debe contar con 8 caracteres minimos, compuesto de letras y números.
+                </p>
+            </fielset>
+            <fielset class="form__fielset" id="fielsetPhone">
+                <label for="phone" class="form__label">Telefono:</label>
+                <div class="form__input-icon">
+                    <input type="text" class="form__input" id="phone" name="phone" placeholder="Número de porfavor.">
+                    <box-icon type='solid' name='x-circle' class="form__validation-estado"></box-icon>
+                </div>
+                <p class="form__paragraph-valitacion">
+                    El numero de telefono no es valido.
+                </p>
+            </fielset>
+            <fielset class="form__fielset" id="fielsetDirection">
+                <label for="direction" class="form__label">Direccion:</label>
+                <div class="form__input-icon">
+                    <input type="text" class="form__input" id="direction" name="direction" placeholder="Direccion porfavor.">
+                    <box-icon type='solid' name='x-circle' class="form__validation-estado"></box-icon>
+                </div>
+                <p class="form__paragraph-valitacion">
+                    Al menos 5 caracteres, con letras, números y un espacio en el medio.
+                </p>
+            </fielset>
+            <fielset class="form__fielset form__fielset--end" id="fielsetTerminos">
+                <input type="checkbox" class="form__imput-checkbox" name="terminos" id="terminos">
+                <label for="terminos" class="form__label-terminos">
+                    Acepto los Terminos y Condiciones
+                </label>
+            </fielset>
+            <fieldset class="form__fielset-mensaje" id="fielsetMensaje">
+               <p class="form__paragraph-error">
+                    <box-icon type='solid' name='error' class="form__box-icon"></box-icon>
+                    <span class="form__span-error">Error:</span> Por favor rellena el formulario correctamente.
+                </p>
+            </fieldset>
+            <div class="form__enviar">
+                <button class="form__buttom" type="submit">Enviar</button>
+                <p class="form__paragraph-exito" id="BottomSubmit">
+                    Formulario enviado exitosamente!
+                </p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <script src="js/formulario.js"></script>
+    </footer>
 </body>
 </html>

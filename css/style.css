@@ -1,0 +1,145 @@
+body{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    font-family: 'Roboto', sans-serif;
+}
+.main{
+    padding: 1rem;
+}
+/*Form start*/
+.form{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 6px 6px 6px 6px hsla(0, 0%, 0%, 0.542);
+    border-radius: 5px;
+}
+.form__fielset{
+    display: block;
+    margin-top: 0.5rem;
+}
+.form__fielset--start{
+    margin-top: 0;
+}
+.form__fielset--end{
+    margin-top: 1rem;
+    text-align: center;
+}
+.form__label{
+    display: block;
+    margin-bottom: 1rem;
+}
+.form__input{
+	border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.341);
+    width: 100%;
+    padding: 0.5rem 0;
+}
+.form__input:focus{
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.form__input-icon{
+    position: relative;
+}
+.form__validation-estado{
+    display: none;
+    position: absolute;
+    right: 0;
+    top:5px;
+    z-index:10;
+}
+.form__paragraph-valitacion{
+    display: none;
+    margin: 0.5rem 0;
+}
+.form__imput-checkbox{
+    margin: 0;
+}
+.form__fielset-mensaje{
+    background-color: #bb0000;
+    display: none;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+.form__box-icon{
+    vertical-align: middle;
+    fill: yellow;
+    margin: 0 0.2rem;
+}
+.form__span-error{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.form__enviar{
+    margin: 2rem 0;
+    text-align: center;
+}
+.form__buttom{
+    max-width: 20rem;
+    width: 90%;
+    padding: 0.5rem 0rem;
+    background-color: rgba(0, 0, 0, 0.863);
+    border-radius: 10px;
+    border: 1px solid transparent;
+    color: white;
+}
+.form__buttom:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.form__paragraph-exito{
+    display: none;
+    margin-top: 1rem;
+}
+/*Form end*/
+/*Style Validation*/
+.form__fielset-correcto .form__validation-estado{
+    fill: green;
+    display: block;
+}
+.form__fielset-correcto .form__input{
+    border-bottom: 1px solid green;
+}
+.form__fielset-incorrecto .form__label{
+    color: red;
+}
+.form__fielset-incorrecto .form__validation-estado{
+    fill: red;
+    display: block;
+}
+.form__fielset-incorrecto .form__input{
+    border-bottom: 1px solid red;
+}
+.form__paragraph-valitacion--activo{
+    display: block;
+}
+/*Style Validation end*/
+
+@media screen and (min-width:1024px){
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0;
+    }
+    .form{
+        flex-flow: row wrap;
+        height: 60vh;
+    }
+    .form__fielset{
+        flex:40%;
+        margin: 0 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .form__label{
+        margin-bottom: 0.5rem;
+    }
+    .form__fielset--end, .form__enviar{
+        flex: 100%;
+    }
+    .form__enviar{
+        margin: 1rem 0;
+    }
+}
