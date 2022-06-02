@@ -127,6 +127,7 @@ body{
     .form{
         flex-flow: row wrap;
         height: 60vh;
+        width: 90%;
     }
     .form__fielset{
         flex:40%;

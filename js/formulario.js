@@ -28,6 +28,7 @@ const validationForm = (e) =>{
     }
 }
 
+
 inputs.forEach((input) => {
     input.addEventListener('keyup', validationForm );
     input.addEventListener('bluer', validationForm );
